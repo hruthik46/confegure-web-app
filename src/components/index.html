@@ -1,0 +1,15 @@
+<html>
+                <head>
+                    <link rel="stylesheet" type="text/css" href="style.css"></link>
+                </head>
+                <body>
+                <h1>Confegure</h1>
+                <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+                <script type="text/javascript">
+                $(document).on('scroll',function() {
+                $('h1').css("left",Math.max(500-0.35*window.scrollY,0)+"px")
+                
+            }) 
+        </script>
+                </body>
+            </html>

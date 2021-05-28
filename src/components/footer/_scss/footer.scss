@@ -1,0 +1,150 @@
+.footer{
+    background-color: black;
+    height: 350px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    flex-direction: column;
+
+    .row{
+        width: 100%;
+        display: grid;
+        place-items: center;
+        grid-template-columns: auto auto auto 50px;
+        .col{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            // .row{        
+            //     display: grid;
+            //     place-items: center;
+            //     grid-template-columns: auto auto auto;
+
+            //     .col1{
+            //         margin: -20px;
+            //     }
+            // }
+
+            .social{
+                display: none;
+                @media screen and(max-width: 600px){
+                    display: block;
+                    .row{
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
+                        .col{
+                            margin: 10px;
+                        }
+                    }
+                }
+            }
+            img{
+                width: 150px;
+                border-radius: 10px;
+            }
+            p{
+                color: white;
+                font-size: 18px;
+                width: 250px;
+                margin-top: 20px;
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            .main-title{
+                text-align: center;
+                align-items: center;
+                display: flex;
+                margin-bottom: 0px;
+            }
+
+            ul{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                li{
+                    margin-left: -20px;
+                    list-style-type: none;
+                    color: white;
+                    font-size: 20px;
+                }
+            }
+
+            form{
+                display: flex;
+                flex-direction: column;
+
+                label{
+                    color: white;
+                    font-size: 20px;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+                input{
+                    background-color: black;
+                    border: 0.5px solid white;
+                    padding: 10px;
+                    border-radius: 5px;
+                    color: white;
+                }
+
+                textarea{
+                    background-color: black;
+                    border: 0.5px solid white;
+                    color: white;
+                    border-radius: 5px;
+                    padding: 10px;
+                    min-height: 80px;
+                    max-height: 110px;
+                }
+
+                .submit{
+                    margin-top: 5px;
+                    background-color: white;
+                    border: 0.5px solid white;
+                    padding: 5px;
+                    border-radius: 5px;
+                    color: black;
+                    margin-top: 5px;
+                    font-weight: bold;
+                    width: 100px;
+                }
+            }
+        }
+
+        @media screen and(max-width: 600px){
+            display: grid;
+            grid-template-columns: auto;
+            height: 100%;
+
+            .social{
+                display: block;
+                .row{
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    .col{
+                        margin: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-subs{
+        color: white;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    @media screen and(max-width: 600px){
+            height: 100%;
+    }
+}

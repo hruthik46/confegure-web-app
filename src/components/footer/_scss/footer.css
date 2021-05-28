@@ -1,0 +1,201 @@
+.footer {
+  background-color: black;
+  height: 350px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .row {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -ms-grid-columns: auto auto auto 50px;
+      grid-template-columns: auto auto auto 50px;
+}
+
+.footer .row .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .row .col .social {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .footer .row .col .social {
+    display: block;
+  }
+  .footer .row .col .social .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  .footer .row .col .social .row .col {
+    margin: 10px;
+  }
+}
+
+.footer .row .col img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.footer .row .col p {
+  color: white;
+  font-size: 18px;
+  width: 250px;
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer .row .col .main-title {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0px;
+}
+
+.footer .row .col ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.footer .row .col ul li {
+  margin-left: -20px;
+  list-style-type: none;
+  color: white;
+  font-size: 20px;
+}
+
+.footer .row .col form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .row .col form label {
+  color: white;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.footer .row .col form input {
+  background-color: black;
+  border: 0.5px solid white;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.footer .row .col form textarea {
+  background-color: black;
+  border: 0.5px solid white;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  min-height: 80px;
+  max-height: 110px;
+}
+
+.footer .row .col form .submit {
+  margin-top: 5px;
+  background-color: white;
+  border: 0.5px solid white;
+  padding: 5px;
+  border-radius: 5px;
+  color: black;
+  margin-top: 5px;
+  font-weight: bold;
+  width: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  .footer .row {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    height: 100%;
+  }
+  .footer .row .social {
+    display: block;
+  }
+  .footer .row .social .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  .footer .row .social .row .col {
+    margin: 10px;
+  }
+}
+
+.footer .footer-subs {
+  color: white;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=footer.css.map */
